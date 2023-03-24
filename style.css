@@ -14,11 +14,10 @@
 }
 body{
     background-color: #000;
+    color: #fff;
     padding: 32px;
     background-image: url(./img/LogoBackground.png);
-    background-repeat:no-repeat;
-    background-position-x: 50%;
-    background-position-y: -600%;
+    background-repeat:repeat-y;
 }
 .versus{
     font-family: 'Anton', sans-serif;
@@ -43,4 +42,55 @@ body{
 }
 .match-titulo{
     color: #fff;
+    padding: 16px;
+}
+.line{
+    flex-grow: 1;
+    border-top: 2px solid blue;
+}
+
+.picks-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card{
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    min-height: 350px;
+}
+.card::before{
+    background-position: center;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.card:hover{
+    border: 6px solid #e22859;
+}
+.card:hover .check{
+    opacity: 1;
+}
+.card:hover .accept{
+    opacity: 1;
+}
+.card.de_mirage::before{
+    background-image: url(./img/mirage.png);
+}
+.accept{
+    background-color: #e22859;
+    font-family: 'Inter',sans-serif;
+    height: 40px;
+    left: 0;
+    opacity: 0;
+
 }
