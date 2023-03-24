@@ -1,3 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#imperial-logo{
+    width: 7%;
+}
+#zeronation-logo{
+    width: 9%;
+}
 body{
-    color: brown;
+    background-color: #000;
+    padding: 32px;
+    background-image: url(./img/LogoBackground.png);
+    background-repeat:no-repeat;
+    background-position-x: 50%;
+    background-position-y: -600%;
+}
+.versus{
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    color: #fff;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.cabecalho-time{
+    color: #fff;
+    font-size: 28px;
+}
+.match{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-titulo{
+    color: #fff;
 }
