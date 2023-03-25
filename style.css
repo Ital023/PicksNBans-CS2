@@ -198,3 +198,26 @@ body{
 .fa-times:before {
     content: "\f00d";
 }
+@media (max-width: 1024px){
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .cabecalho-time{
+        font-size: 36px;
+    }
+    #imperial-logo{
+        width: 20%;
+    }
+    #zeronation-logo{
+        width: 25%;
+    }
+    .match-titulo{
+        font-size: 20px;
+    }
+}
