@@ -176,3 +176,25 @@ body{
   .card.picked.disable-hover:hover .accept {
     opacity: 0;
   }
+.check{
+    align-items: center;
+    background-color: #E22859;
+    border-radius: 50%;
+    display: flex;
+    font-size: 42px;
+    height: 60px;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+    width: 60px;
+}
+.check i {
+    color: white;
+  }
+.fa-times:before {
+    content: "\f00d";
+}
